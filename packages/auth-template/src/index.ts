@@ -1,6 +1,8 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+import "module-alias/register"
+
 import express, { Application } from "express";
 import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
