@@ -11,7 +11,7 @@
       "create-express-ts": "./src/index.js"
     },
     "scripts": {
-      "prepublishOnly": "cp -R ../main-template . && cp -R ../auth-template .",
+      "prepublishOnly": "xcopy ..\\main-template .\\ && xcopy  ..\\auth-template .\\",
       "postpublish": "rm -rf main-template auth-template"
     },
     "dependencies": {
