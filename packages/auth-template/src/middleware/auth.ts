@@ -1,6 +1,7 @@
+import { NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
-function auth(req: any, res: any, next: any) {
+function auth(req: any, res: any, next: NextFunction) {
   const token = req.cookies.token;
   console.log(token);
 
