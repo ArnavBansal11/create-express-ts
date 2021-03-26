@@ -2,7 +2,7 @@
     "name": "create-ts-express",
     "description": "Set up a Typescript REST API by running one command.",
 
-    "version": "1.2.4",
+    "version": "1.5.0",
     "license": "MIT",
     "files": [
       "auth-template",
