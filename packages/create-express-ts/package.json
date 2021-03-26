@@ -1,0 +1,22 @@
+{
+    "name": "create-express-ts",
+    "description": "Set up a Typescript REST API by running one command.",
+    "author": "Arnav Bansal",
+    "files": [
+      "auth-template",
+      "main-template",
+      "src/index.js"
+    ],
+    "bin": {
+      "create-express-ts": "./src/index.js"
+    },
+    "scripts": {
+      "prepublishOnly": "cp -R ../main-template . && cp -R ../auth-template .",
+      "postpublish": "rm -rf main-template auth-template"
+    },
+    "dependencies": {
+      "chalk": "^3.0.0",
+      "commander": "^4.0.1",
+      "fs-extra": "^8.1.0"
+    }
+  }
