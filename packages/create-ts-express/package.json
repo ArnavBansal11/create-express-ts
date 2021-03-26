@@ -1,0 +1,24 @@
+{
+    "name": "create-ts-express",
+    "description": "Set up a Typescript REST API by running one command.",
+
+    "version": "1.2.4",
+    "license": "MIT",
+    "files": [
+      "auth-template",
+      "main-template",
+      "src/index.js"
+    ],
+    "bin": {
+      "create-graphql-api": "./src/index.js"
+    },
+    "scripts": {
+      "prepublishOnly": "xcopy /e ..\\main-template .\\main-template && xcopy /e  ..\\auth-template .\\auth-template",
+      "postpublish": "del .\\main-template && del .\\auth-template"
+    },
+    "dependencies": {
+      "chalk": "^3.0.0",
+      "commander": "^4.0.1",
+      "fs-extra": "^8.1.0"
+    }
+  }
